@@ -12,7 +12,7 @@
         "url": "https://github.com/7xuanlu/origin.git",
         "path": "plugin",
         "ref": "main",
-        "sha": "c2217edf21a06ca2fc888a676b74b876d28f8cc6"
+        "sha": "048d77a8ea70e5bd6a7bdadaaf07a2ab12bff7c8"
       },
       "description": "Personal AI memory layer for Claude Code — MCP memory plus setup, briefing, capture, recall, distillation, review, forget, and handoff skills.",
       "category": "memory"
