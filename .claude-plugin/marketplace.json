@@ -1,0 +1,41 @@
+{
+  "name": "7xuanlu",
+  "owner": {
+    "name": "Qi-Xuan Lu",
+    "url": "https://github.com/7xuanlu"
+  },
+  "plugins": [
+    {
+      "name": "origin",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/7xuanlu/origin.git",
+        "path": "plugin",
+        "ref": "main",
+        "sha": "c2217edf21a06ca2fc888a676b74b876d28f8cc6"
+      },
+      "description": "Personal AI memory layer for Claude Code — MCP memory plus setup, briefing, capture, recall, distillation, review, forget, and handoff skills.",
+      "category": "memory"
+    },
+    {
+      "name": "boule",
+      "source": {
+        "source": "github",
+        "repo": "7xuanlu/boule",
+        "ref": "main",
+        "sha": "558e20f5bd622f3db154e8dbf053bd2255ba09ae"
+      },
+      "description": "Lean, research-backed multi-LLM council with debiased judging (position-swap, verbosity-norm, stake-free judge)."
+    },
+    {
+      "name": "ultrapowers",
+      "source": {
+        "source": "github",
+        "repo": "7xuanlu/ultrapowers",
+        "ref": "main",
+        "sha": "bce9dc53b1d79bd5a6f7fdca94caf1f79a5e1ff1"
+      },
+      "description": "Unattended SDD/TDD build harness — strict TDD, two-stage fail-closed review, mechanical re-witness-RED. Complements superpowers."
+    }
+  ]
+}
