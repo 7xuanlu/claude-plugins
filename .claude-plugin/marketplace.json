@@ -23,7 +23,7 @@
         "source": "github",
         "repo": "7xuanlu/boule",
         "ref": "main",
-        "sha": "4eb0822cc812dcd7bc1b3ab5183403e930f252c5"
+        "sha": "3e9036b32906aa43e826169d34dad5223011a5ed"
       },
       "description": "Lean, research-backed multi-LLM council with debiased judging (position-swap, verbosity-norm, stake-free judge)."
     },
