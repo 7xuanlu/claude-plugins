@@ -1,0 +1,58 @@
+name: sync-marketplace
+
+# Advance-only sync of plugin pins to their latest published releases.
+# Instant via repository_dispatch from each plugin repo's release; nightly cron
+# is the self-healing backstop; workflow_dispatch is manual/on-demand.
+on:
+  repository_dispatch:
+    types: [plugin-released]
+  schedule:
+    - cron: "0 7 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Resolve latest-release pins
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/resolve-pins.mjs .claude-plugin/marketplace.json > /tmp/resolved.json
+
+      - name: Apply advance-only pin updates
+        id: apply
+        run: |
+          node scripts/sync-marketplace.mjs .claude-plugin/marketplace.json /tmp/resolved.json | tee /tmp/out.json
+          changed=$(node -e "process.stdout.write(String(JSON.parse(require('fs').readFileSync('/tmp/out.json','utf8')).changes.length))")
+          echo "changed=$changed" >> "$GITHUB_OUTPUT"
+
+      - name: Open and squash-merge PR
+        if: steps.apply.outputs.changed != '0'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          branch="sync/marketplace-${GITHUB_RUN_ID}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add .claude-plugin/marketplace.json
+          git commit -m "chore: sync plugin pins to latest releases"
+          git push origin "$branch"
+          gh pr create --base main --head "$branch" \
+            --title "chore: sync plugin pins to latest releases" \
+            --body "Automated advance-only pin sync. Changes/skips in the workflow run log."
+          # Retry: mergeable state can be UNKNOWN immediately after create.
+          for i in 1 2 3 4 5; do
+            if gh pr merge "$branch" --squash --delete-branch; then break; fi
+            echo "merge not ready, retry $i"; sleep 5
+          done
