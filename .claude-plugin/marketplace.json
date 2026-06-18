@@ -32,10 +32,10 @@
       "source": {
         "source": "github",
         "repo": "7xuanlu/ultrapowers",
-        "ref": "main",
-        "sha": "bce9dc53b1d79bd5a6f7fdca94caf1f79a5e1ff1"
+        "ref": "ultrapowers-v0.2.0",
+        "sha": "e7395a1d2ea2bc3c46af1111d3fbb1b6c341fcca"
       },
-      "description": "Unattended SDD/TDD build harness — strict TDD, two-stage fail-closed review, mechanical re-witness-RED. Complements superpowers."
+      "description": "Hand Claude Code a goal and walk away. ultrapowers plans it, builds it test-first, reviews every step, and hands back a branch you can trust. Built on and complements superpowers by Jesse Vincent (@obra); does not replace it."
     }
   ]
 }
