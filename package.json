@@ -1,0 +1,8 @@
+{
+  "name": "claude-plugins-marketplace",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test scripts/*.test.mjs"
+  }
+}
