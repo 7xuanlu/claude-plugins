@@ -11,8 +11,8 @@
         "source": "git-subdir",
         "url": "https://github.com/7xuanlu/origin.git",
         "path": "plugin",
-        "ref": "main",
-        "sha": "048d77a8ea70e5bd6a7bdadaaf07a2ab12bff7c8"
+        "ref": "v0.8.5",
+        "sha": "10fe16ba1dc43e88ef6ac95e2f11296665bb4ae3"
       },
       "description": "Personal AI memory layer for Claude Code — MCP memory plus setup, briefing, capture, recall, distillation, review, forget, and handoff skills.",
       "category": "memory"
@@ -22,8 +22,8 @@
       "source": {
         "source": "github",
         "repo": "7xuanlu/boule",
-        "ref": "main",
-        "sha": "3e9036b32906aa43e826169d34dad5223011a5ed"
+        "ref": "v0.1.1",
+        "sha": "6a46ee12dfb7a7badc50e2e2666dfc91aa17fcac"
       },
       "description": "Lean, research-backed multi-LLM council with debiased judging (position-swap, verbosity-norm, stake-free judge)."
     },
