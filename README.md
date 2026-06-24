@@ -13,7 +13,7 @@ Personal marketplace for [@7xuanlu](https://github.com/7xuanlu)'s Claude Code pl
 
 | Plugin | Description | Source |
 |--------|-------------|--------|
-| `origin` | Personal AI memory layer (MCP memory + skills) | [7xuanlu/origin](https://github.com/7xuanlu/origin) · `plugin/` subdir |
+| `origin` | Personal AI memory layer (MCP memory + skills) | [7xuanlu/wenlan](https://github.com/7xuanlu/wenlan) · `plugin/` subdir |
 | `boule` | Research-backed multi-LLM council with debiased judging | [7xuanlu/boule](https://github.com/7xuanlu/boule) |
 | `ultrapowers` | Unattended SDD/TDD build harness | [7xuanlu/ultrapowers](https://github.com/7xuanlu/ultrapowers) |
 
