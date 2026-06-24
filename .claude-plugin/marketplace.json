@@ -11,8 +11,8 @@
         "source": "git-subdir",
         "url": "https://github.com/7xuanlu/wenlan.git",
         "path": "plugin",
-        "ref": "v0.9.0",
-        "sha": "b0e1f32e36ce168d2de1595ed88017f1766244df"
+        "ref": "v0.9.1",
+        "sha": "cb556b8511086c04441ed0bac20d20c4b8123d1c"
       },
       "description": "Personal AI memory layer for Claude Code — MCP memory plus setup, briefing, capture, recall, distillation, review, forget, and handoff skills.",
       "category": "memory"
@@ -32,8 +32,8 @@
       "source": {
         "source": "github",
         "repo": "7xuanlu/ultrapowers",
-        "ref": "ultrapowers-v0.4.0",
-        "sha": "0002938953f03dcdad04a8c6e3cdcf140f3209e2"
+        "ref": "ultrapowers-v0.4.1",
+        "sha": "d61f95b53e5cba6b3466f5cb5ae0534c206caa5a"
       },
       "description": "Hand Claude Code a goal and walk away. ultrapowers plans it, builds it test-first, reviews every step, and hands back a branch you can trust. Built on and complements superpowers by Jesse Vincent (@obra); does not replace it."
     }
