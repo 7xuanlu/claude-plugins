@@ -32,8 +32,8 @@
       "source": {
         "source": "github",
         "repo": "7xuanlu/ultrapowers",
-        "ref": "ultrapowers-v0.3.1",
-        "sha": "e36f03a7654fef86908af22bba183fa3226cb5ae"
+        "ref": "ultrapowers-v0.4.0",
+        "sha": "0002938953f03dcdad04a8c6e3cdcf140f3209e2"
       },
       "description": "Hand Claude Code a goal and walk away. ultrapowers plans it, builds it test-first, reviews every step, and hands back a branch you can trust. Built on and complements superpowers by Jesse Vincent (@obra); does not replace it."
     }
