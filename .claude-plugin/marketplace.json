@@ -9,7 +9,7 @@
       "name": "wenlan",
       "source": {
         "source": "git-subdir",
-        "url": "https://github.com/7xuanlu/wenlan.git",
+        "url": "https://github.com/wenlan-app/wenlan.git",
         "path": "plugin",
         "ref": "v0.18.16",
         "sha": "2fbc515cd23bcb719d25a69cd1a23c8d747f9660"
