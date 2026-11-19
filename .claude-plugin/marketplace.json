@@ -11,8 +11,8 @@
         "source": "git-subdir",
         "url": "https://github.com/wenlan-app/wenlan.git",
         "path": "plugin",
-        "ref": "v0.22.2",
-        "sha": "7a586a679f4ffacac36ee1a6230be198e4f03ae9"
+        "ref": "v0.22.3",
+        "sha": "19b522c38d33a407aa3673e03c21853381e250ea"
       },
       "description": "Personal AI memory layer for Claude Code — MCP memory plus setup, briefing, capture, recall, distillation, review, forget, and handoff skills.",
       "category": "memory"
